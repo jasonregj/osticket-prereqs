@@ -18,6 +18,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
+- Create a Resource Group in Microsoft Azure
+- Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual Cups
+- Allow the VM to create a new Virtual Network (Vnet)
+- Name the Virtual Machine Vm-osticket with Username: 'jasonregj' and a password
+- Login to Microsoft Remote Desktop with your VM public IP Address
 - Download IIS with CGI (use standard configurations for all Launch Config wizards)
 - Download/install PHP Manager for IIS (V1.5.0.msi)
 - Download/install Rewrite Module (rewrite_amd64_en-US.msi)
@@ -28,6 +33,63 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
+<p>
+Create your Resource Group in Microsoft Azure (must have a subscription). 
+</p>
+<p>
+<img src="https://i.imgur.com/m2m7ppf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Create an Azure Virtual Machine Windows 10, 4 vCPUs
+</p>
+<p>
+- Name the VM 'VM-osTicket'
+</p>
+<p>
+- Username: 'jasonregj' amd choose a password
+</p>
+
+<p>
+<img src="https://i.imgur.com/EUL1Qbz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/IqIVw9f.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+Once you click the create button for your VM, you can view all the resources within the VM under the Resource Group "VMs_Lab02."
+</p>
+<p>
+<img src="https://i.imgur.com/4hzXbO9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p>
+Download Microsoft Remote Desktop from Google. Open the application and copy the public IP address from your VM's Virtual Network and copy it into the Remote Desktop "Add PC" PC Name. You can view this information from Home -> VM-osTicket. Login with username 'jasonregj' and the password created.
+</p>
+<p>
+<img src="https://i.imgur.com/2oKJfXj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/lmeECL3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/fyFZWsy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Select 'Continue'
+</p>
+<p>
+<img src="https://i.imgur.com/kIuM5jG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/rXsvrRE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+What we have now done is created a Virtual desktop computer with a Virtual network (separate from our actual computer), a network security group (NSG or firewall), a network interface card (NIC or virtual ethernet port), a public IP address, and a storage disk. For the osTicket demonstrations, we can now login as an administrator in one computer/network and a user in the other virtual computer/network (or vice versa), test connectivity between the networks, and confirm configurations of roles, departments, agents, teams, users, SLAs, and ensure help topics are in place via an admin and a user. 
+  
+<p>
+Download and install necessary files for successful osTicket installation
+</p>
 <p>
 <img src="https://i.imgur.com/BvYAXlT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
